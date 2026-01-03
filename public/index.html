@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple yet powerful todo app with priority and category management">
+    <title>Todo App - Organize Your Tasks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="app-title">📝 Todo App</h1>
+                <div class="header-controls">
+                    <div class="stats-summary" id="statsSummary">
+                        <span id="totalTasks">0</span> tasks,
+                        <span id="completedTasks">0</span> completed
+                    </div>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Add Task Form -->
+            <section class="add-task-section">
+                <form class="add-task-form" id="addTaskForm">
+                    <input
+                        type="text"
+                        id="taskInput"
+                        class="task-input"
+                        placeholder="What needs to be done? (Press Enter to add)"
+                        autocomplete="off"
+                        required
+                    >
+                    <select id="prioritySelect" class="priority-select">
+                        <option value="high">🔴 High</option>
+                        <option value="medium" selected>🟡 Medium</option>
+                        <option value="low">🟢 Low</option>
+                    </select>
+                    <select id="categorySelect" class="category-select">
+                        <option value="work">💼 Work</option>
+                        <option value="personal" selected>👤 Personal</option>
+                        <option value="study">📚 Study</option>
+                        <option value="shopping">🛒 Shopping</option>
+                    </select>
+                    <button type="submit" class="btn-add">
+                        <span>+ Add Task</span>
+                    </button>
+                </form>
+            </section>
+
+            <!-- Controls -->
+            <section class="controls-section">
+                <div class="filter-controls">
+                    <span class="control-label">Filter:</span>
+                    <div class="btn-group" id="filterButtons">
+                        <button class="btn-filter active" data-filter="all">All</button>
+                        <button class="btn-filter" data-filter="work">💼 Work</button>
+                        <button class="btn-filter" data-filter="personal">👤 Personal</button>
+                        <button class="btn-filter" data-filter="study">📚 Study</button>
+                        <button class="btn-filter" data-filter="shopping">🛒 Shopping</button>
+                    </div>
+                </div>
+                <div class="sort-controls">
+                    <span class="control-label">Sort:</span>
+                    <div class="btn-group" id="sortButtons">
+                        <button class="btn-sort active" data-sort="default">Default</button>
+                        <button class="btn-sort" data-sort="priority-desc">Priority ↓</button>
+                        <button class="btn-sort" data-sort="priority-asc">Priority ↑</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Task List -->
+            <section class="task-list-section">
+                <div class="task-list" id="taskList">
+                    <!-- Tasks will be rendered here -->
+                    <div class="empty-state" id="emptyState">
+                        <div class="empty-icon">✨</div>
+                        <p>No tasks yet. Add one above to get started!</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Panel -->
+            <section class="stats-section">
+                <div class="stats-header">
+                    <h2>📊 Statistics</h2>
+                    <button class="stats-toggle" id="statsToggle">
+                        <span>▼</span>
+                    </button>
+                </div>
+                <div class="stats-panel" id="statsPanel">
+                    <div class="stats-grid">
+                        <div class="stat-group">
+                            <h3>By Category</h3>
+                            <div id="categoryStats"></div>
+                        </div>
+                        <div class="stat-group">
+                            <h3>By Priority</h3>
+                            <div id="priorityStats"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>
+                <kbd>Enter</kbd> to add task |
+                <kbd>Esc</kbd> to cancel |
+                <kbd>Ctrl/Cmd + D</kbd> to toggle dark mode |
+                Double-click to edit
+            </p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

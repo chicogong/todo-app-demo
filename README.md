@@ -1,8 +1,66 @@
 # Todo App Demo
 
-A simple yet powerful command-line todo application with priority and category management features.
+A simple yet powerful todo application with priority and category management features.
 
-## Features
+**Two Versions Available:**
+- 🌐 **Web App** - Modern, interactive web interface (Recommended)
+- 💻 **CLI App** - Command-line interface for terminal users
+
+## ✨ Web App (NEW!)
+
+### Features
+
+- **Modern UI** - Clean, card-based design with smooth animations
+- **Dark Mode** - Eye-friendly dark theme with one-click toggle
+- **Drag & Drop** - Reorder tasks by dragging
+- **Inline Editing** - Double-click any task to edit
+- **Keyboard Shortcuts** - Power user friendly
+- **Data Persistence** - Automatic save to localStorage
+- **Responsive Design** - Works on desktop, tablet, and mobile
+
+### Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/chicogong/todo-app-demo.git
+cd todo-app-demo
+
+# Open the web app
+open public/index.html
+# Or on Linux: xdg-open public/index.html
+# Or simply double-click public/index.html
+```
+
+That's it! No installation or server required. The app runs entirely in your browser.
+
+### Web App Screenshots
+
+**Light Mode:**
+
+![Light Mode](screenshots/web-light-mode.png)
+
+*Clean, modern interface with intuitive controls*
+
+**Dark Mode:**
+
+![Dark Mode](screenshots/web-dark-mode.png)
+
+*Eye-friendly dark theme perfect for night use*
+
+### Keyboard Shortcuts
+
+- `Enter` - Add a new task (when input is focused)
+- `Esc` - Cancel editing / Clear input
+- `Ctrl/Cmd + D` - Toggle dark mode
+- `Double-click` - Edit a task inline
+
+### Live Demo
+
+[Try it online](https://chicogong.github.io/todo-app-demo/public/) (if GitHub Pages is enabled)
+
+---
+
+## 💻 CLI App Features
 
 ### Core Functionality
 - ✅ **Priority Management** - Three-level priority system (High, Medium, Low)
@@ -218,18 +276,26 @@ Display comprehensive statistics including:
 
 ```
 todo-app-demo/
-├── index.js                          # Main application file
+├── public/                           # Web App (NEW!)
+│   ├── index.html                    # Main HTML file
+│   ├── app.js                        # Application logic (498 lines)
+│   └── styles.css                    # Styling (608 lines)
+├── index.js                          # CLI application
 ├── package.json                      # Package configuration
 ├── README.md                         # This file
 ├── docs/
-│   └── designs/
-│       └── 2026-01-03-todo-priority-category-design.md
+│   ├── designs/
+│   │   ├── 2026-01-03-todo-priority-category-design.md
+│   │   └── 2026-01-03-web-frontend-design.md  # Web UI design
+│   └── ARCHITECTURE.md               # Architecture documentation
 ├── screenshots/
-│   └── demo-output.txt              # Demo output screenshot
-└── .claude/                         # Claude Code configurations
-    ├── agents/                      # Custom AI agents
-    ├── commands/                    # Slash commands
-    └── skills/                      # Reusable skills
+│   ├── demo-output.txt               # CLI demo output
+│   ├── web-light-mode.png            # Web app screenshot (light)
+│   └── web-dark-mode.png             # Web app screenshot (dark)
+└── .claude/                          # Claude Code configurations
+    ├── agents/                       # Custom AI agents
+    ├── commands/                     # Slash commands
+    └── skills/                       # Reusable skills
 ```
 
 ## Design Document
