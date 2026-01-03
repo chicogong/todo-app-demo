@@ -1,0 +1,9 @@
+{
+  "name": "todo-app-demo",
+  "version": "1.0.0",
+  "description": "A simple todo app demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}

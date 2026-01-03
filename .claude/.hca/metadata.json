@@ -1,0 +1,83 @@
+{
+  "version": "1.0.0",
+  "source": "https://github.com/notedit/happy-coding-agent",
+  "branch": "main",
+  "commit": "0462276dc01860f3090c3cd7b376059da27a4d4a",
+  "installed_at": "2026-01-03T16:12:33.824355",
+  "updated_at": "2026-01-03T16:12:33.824366",
+  "components": {
+    "agents": {
+      "installed": true,
+      "files": [
+        "agents/code-architect.md",
+        "agents/code-explorer.md",
+        "agents/code-reviewer.md",
+        "agents/screenshot-business-analyzer.md",
+        "agents/screenshot-interaction-analyzer.md",
+        "agents/screenshot-reviewer.md",
+        "agents/screenshot-synthesizer.md",
+        "agents/screenshot-ui-analyzer.md",
+        "agents/test-generator.md",
+        "agents/test-runner.md"
+      ]
+    },
+    "commands": {
+      "installed": true,
+      "files": [
+        "commands/feature-analyzer.md",
+        "commands/feature-dev.md",
+        "commands/feature-pipeline.md",
+        "commands/screenshot-analyzer.md"
+      ]
+    },
+    "skills": {
+      "installed": true,
+      "files": [
+        "skills/feature-design-assistant/SKILL.md",
+        "skills/screenshot-feature-extractor/SKILL.md",
+        "skills/screenshot-feature-extractor/references/output-format.md",
+        "skills/skill-creation-guide/LICENSE.txt",
+        "skills/skill-creation-guide/SKILL.md",
+        "skills/skill-creation-guide/references/output-patterns.md",
+        "skills/skill-creation-guide/references/workflows.md",
+        "skills/skill-creation-guide/scripts/init_skill.py",
+        "skills/skill-creation-guide/scripts/package_skill.py",
+        "skills/skill-creation-guide/scripts/quick_validate.py",
+        "skills/task-execution-engine/SKILL.md",
+        "skills/task-execution-engine/references/task-format.md",
+        "skills/task-execution-engine/references/workflow-guide.md",
+        "skills/task-execution-engine/scripts/task_manager.py"
+      ]
+    }
+  },
+  "checksums": {
+    "agents/code-architect.md": "sha256:6191eada0007d2d5",
+    "agents/code-explorer.md": "sha256:3b277703de745898",
+    "agents/code-reviewer.md": "sha256:e55309eaab1a173e",
+    "agents/screenshot-business-analyzer.md": "sha256:23c2fca750ec3032",
+    "agents/screenshot-interaction-analyzer.md": "sha256:b0432907e0e3d1de",
+    "agents/screenshot-reviewer.md": "sha256:f3bce481a21d87fc",
+    "agents/screenshot-synthesizer.md": "sha256:38aa6ae62fe35231",
+    "agents/screenshot-ui-analyzer.md": "sha256:0b6f450f2b3e89f2",
+    "agents/test-generator.md": "sha256:c5bd39dee0e6fd3a",
+    "agents/test-runner.md": "sha256:f1e1042534d977f9",
+    "commands/feature-analyzer.md": "sha256:fdfc662df62b3df9",
+    "commands/feature-dev.md": "sha256:a14876d2d6294cc8",
+    "commands/feature-pipeline.md": "sha256:47f96ed8e63729d9",
+    "commands/screenshot-analyzer.md": "sha256:fe197178ff5b9e8a",
+    "skills/feature-design-assistant/SKILL.md": "sha256:c0f35287b7d84c87",
+    "skills/screenshot-feature-extractor/SKILL.md": "sha256:ffd5144d4b4230b2",
+    "skills/screenshot-feature-extractor/references/output-format.md": "sha256:b8960992a35cf340",
+    "skills/skill-creation-guide/LICENSE.txt": "sha256:58d1e17ffe5109a7",
+    "skills/skill-creation-guide/SKILL.md": "sha256:b1ae6054a8f0859c",
+    "skills/skill-creation-guide/references/output-patterns.md": "sha256:d6027800b9d8c265",
+    "skills/skill-creation-guide/references/workflows.md": "sha256:ef4846877d5dab47",
+    "skills/skill-creation-guide/scripts/init_skill.py": "sha256:0bba250b94caa4cb",
+    "skills/skill-creation-guide/scripts/package_skill.py": "sha256:b31fbcb3e362d5c5",
+    "skills/skill-creation-guide/scripts/quick_validate.py": "sha256:381ab2d3d1fd5ec3",
+    "skills/task-execution-engine/SKILL.md": "sha256:9d58bcb4b3570e51",
+    "skills/task-execution-engine/references/task-format.md": "sha256:e23cd14885c880a4",
+    "skills/task-execution-engine/references/workflow-guide.md": "sha256:dcd487d7a0592b66",
+    "skills/task-execution-engine/scripts/task_manager.py": "sha256:15779826d7f2e44e"
+  }
+}
