@@ -1,0 +1,59 @@
+=== Todo App Demo ===
+
+Adding todos...
+✓ Added: Complete project report [high] [work]
+✓ Added: Buy groceries [low] [shopping]
+✓ Added: Learn JavaScript [medium] [study]
+✓ Added: Call dentist [medium] [personal]
+✓ Added: Prepare presentation [high] [work]
+
+=== All Todos ===
+  [HIGH] Complete project report (work)
+  [LOW] Buy groceries (shopping)
+  [MEDIUM] Learn JavaScript (study)
+  [MEDIUM] Call dentist (personal)
+  [HIGH] Prepare presentation (work)
+
+
+=== Todos (High to Low Priority) ===
+  [HIGH] Complete project report (work)
+  [HIGH] Prepare presentation (work)
+  [MEDIUM] Learn JavaScript (study)
+  [MEDIUM] Call dentist (personal)
+  [LOW] Buy groceries (shopping)
+
+
+=== Todos in "work" ===
+  [HIGH] Complete project report
+  [HIGH] Prepare presentation
+
+
+Completing a todo...
+✓ Updated: Complete project report
+
+Updating a todo...
+✓ Updated: Complete project report
+
+=== Todo Statistics ===
+
+By Category:
+  work: 2 total, 1 completed
+  personal: 1 total, 0 completed
+  study: 1 total, 0 completed
+  shopping: 1 total, 0 completed
+
+By Priority:
+  high: 2 total, 1 completed
+  medium: 2 total, 0 completed
+  low: 1 total, 0 completed
+
+Overall: 5 total, 1 completed, 4 pending
+
+
+=== Todos (Low to High Priority) ===
+  [LOW] Buy groceries (shopping)
+  [MEDIUM] Learn JavaScript (study)
+  [MEDIUM] Call dentist (personal)
+✓ [HIGH] Complete project report (work)
+  [HIGH] Prepare presentation (work)
+
